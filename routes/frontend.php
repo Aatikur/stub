@@ -12,46 +12,56 @@
 */
 
 // ------- Index --------
-Route::get('/', function () {
-    return view('web.index');
-})->name('web.index');
 
-// ------- About --------
-Route::get('/About', function () {
-    return view('web.about.about');
-})->name('web.about.about');
+use Illuminate\Support\Facades\Route;
+Route::group(['namespace' => 'Web'],function(){
+    Route::get('/', function () {
+        return view('web.index');
+    })->name('web.index');
 
-// ------- Contact --------
-Route::get('/Contact', function () {
-    return view('web.contact.contact');
-})->name('web.contact.contact');
+    // ------- About --------
+    Route::get('/About', function () {
+        return view('web.about.about');
+    })->name('web.about.about');
 
-// ------- Product --------
-Route::get('/Product', function () {
-    return view('web.product.product');
-})->name('web.product.product');
+    // ------- Contact --------
+    Route::get('/Contact', function () {
+        return view('web.contact.contact');
+    })->name('web.contact.contact');
 
-// ------- LITHO AND DIGITAL PRINTING --------
-Route::get('/Litho-And-Digital-Printing', function () {
-    return view('web.product.product-portfolio1');
-})->name('web.product.product-portfolio1');
+    // ------- Product --------
+    Route::get('/Product', function () {
+        return view('web.product.product');
+    })->name('web.product.product');
 
-// ------- Corporate Gifts --------
-Route::get('/Corporate-Gifts', function () {
-    return view('web.product.product-portfolio2');
-})->name('web.product.product-portfolio2');
+    // ------- LITHO AND DIGITAL PRINTING --------
+    Route::get('/Litho-And-Digital-Printing', function () {
+        return view('web.product.product-portfolio1');
+    })->name('web.product.product-portfolio1');
 
-// ------- Flexo Printing --------
-Route::get('/Flexo-Printing', function () {
-    return view('web.product.product-portfolio3');
-})->name('web.product.product-portfolio3');
+    // ------- Corporate Gifts --------
+    Route::get('/Corporate-Gifts', function () {
+        return view('web.product.product-portfolio2');
+    })->name('web.product.product-portfolio2');
 
-// ------- Promotional&Pos --------
-Route::get('/Promotional&Pos', function () {
-    return view('web.product.product-portfolio4');
-})->name('web.product.product-portfolio4');
+    // ------- Flexo Printing --------
+    Route::get('/Flexo-Printing', function () {
+        return view('web.product.product-portfolio3');
+    })->name('web.product.product-portfolio3');
+
+    // ------- Promotional&Pos --------
+    Route::get('/Promotional&Pos', function () {
+        return view('web.product.product-portfolio4');
+    })->name('web.product.product-portfolio4');
+
+    // ------- Promotional&Pos --------
+    // Route::get('/res', function () {
+    //     return view('web.contact.response');
+    // })->name('web.contact.response');
 
 // ------- Gallery --------
-Route::get('/Gallery', function () {
-    return view('web.gallery.gallery');
-})->name('web.gallery.gallery');
+
+    Route::get('/Gallery', 'WebController@gallery')->name('web.gallery');
+    Route::post('/add/contacts','WebController@addContacts')->name('web.add_contacts');
+    Route::get('/res/{status}','WebController@response')->name('web.response');
+});

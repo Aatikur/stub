@@ -48,7 +48,7 @@
                         <li><a href="{{route('web.index')}}">Home</a></li>
                         <li><a href="{{route('web.about.about')}}">About</a></li>
                         <li><a href="{{route('web.product.product')}}">Product</a></li>
-                        <li><a href="{{route('web.gallery.gallery')}}">Portfolio</a></li>
+                        <li><a href="{{route('web.gallery')}}">Portfolio</a></li>
                         <li><a href="{{route('web.contact.contact')}}">Contact</a> </li>
                     </ul>   
                 </div><!-- /.navbar-collapse -->

@@ -29,66 +29,21 @@
                 <h3>Our Work</h3>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-1.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-1.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-2.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-2.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-3.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-3.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-4.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-4.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-5.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-5.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/project-1-6.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/project-1-6.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-4 -->
+                @foreach($gallery as  $value)
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="single-recent-project">
+                            <div class="img-box">
+                                <img src="{{asset('images/gallery/'.$value->image)}}" alt="Stups Protfolio"/>
+                            </div><!-- /.img-box -->
+                            <div class="text-box">
+                                <a class="example-image-link more" href="{{asset('images/gallery/'.$value->image)}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
+                            </div><!-- /.text-box -->
+                        </div><!-- /.single-recent-project -->
+                    </div><!-- /.col-md-4 -->
+                @endforeach
+                
+               
+               
             </div><!-- /.row -->
         </div><!-- /.thm-container -->
     </section><!-- /.recent-projects -->

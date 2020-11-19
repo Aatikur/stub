@@ -203,7 +203,7 @@
                     </div><!-- /.single-recent-project -->
                 </div><!-- /.col-md-4 -->
                 <div class="col-md-12 text-center">
-                    <a href="{{route('web.gallery.gallery')}}" class="thm-btn yellow-bg">More</a>
+                    <a href="{{route('web.gallery')}}" class="thm-btn yellow-bg">More</a>
                 </div><!-- /.col-md-4 -->
             </div><!-- /.row -->
         </div><!-- /.thm-container -->

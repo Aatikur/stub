@@ -35,7 +35,8 @@
                             <span>Contact with us</span>
                             <h2>Send Message</h2>
                         </div><!-- /.title -->
-                        <form action="http://layerdrops.com/printify/inc/sendemail.php" class="contact-form">
+                        <form action="{{ route('web.add_contacts') }}" method="POST" class="contact-form">
+                        @csrf
                             <input type="text" name="name" placeholder="Your full name" />
                             <input type="text" name="email" placeholder="Your email address" />
                             <textarea name="message" placeholder="What you are looking for?"></textarea>
