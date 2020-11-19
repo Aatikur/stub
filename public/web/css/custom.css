@@ -1,0 +1,79 @@
+.thm-container .navbar-brand>img {
+    width: 40%;
+}
+.header-navigation ul.navigation-box > li:hover > a {
+    border-bottom: 1px solid #2884C6;
+}
+.mail-us-section {
+    background-color: #FEC931;
+    padding: 10px 0;
+}
+.mail-us-section h5 {
+    font-family: 'Pacifico';
+    font-size: 30px;
+    color: #FF4328;
+    text-align: right;
+}
+.mail-us-section .contact-btn {
+    text-align: left;
+    padding-top: 10px;
+}
+.mail-us-section .contact-btn a {
+    text-align: left;
+    margin-right: 20px;
+    border: 1px solid #ff4328;
+    color: #ff4328;
+    padding: 3px 30px;
+}
+.intro-section {
+    padding: 60px 0;
+}
+.about-page .service-content h4 {
+    font-size: 21px;
+    color: #FEC931;
+    text-decoration: underline;
+    margin: 30px 0 20px;
+}
+.abt-pg, .recent-projects {
+    padding: 50px 0;
+}
+.abt-pg .faq-content {
+    padding: 0;
+}
+.vision-content{
+    padding:30px;
+    background: #eaeaea;
+}
+.contact-section{
+    padding:30px 30px 26px;
+}
+.moto-content p {
+    font-family: 'Pacifico';
+    font-size: 23px;
+}
+.vision-content ul {
+    padding-left: 20px;
+    margin-top: 50px;
+}
+.vision-content ul li {
+    font-size: 15px;
+}
+.industry-img-box img {
+    width: 100%;
+    border-radius: 30px;
+}
+.industry {
+    padding: 50px;
+}
+.industry .service-content h4 {
+    color: #333;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.recent-projects .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+}
