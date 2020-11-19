@@ -5,12 +5,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>Admiry - Responsive Flat Admin Dashboard</title>
+        <title>Stups - Admin Dashboard</title>
         <meta content="Admin Dashboard" name="description" />
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}">
+        <link rel="shortcut icon" href="{{asset('assets/images/logos.png')}}">
 
         <!--Morris Chart CSS -->
         <link rel="stylesheet" href="{{asset('assets/plugins/morris/morris.css')}}">
@@ -54,7 +54,7 @@
                 <div class="topbar-left">
                     <div class="text-center">
                         <!--<a href="index.html" class="logo">Admiry</a>-->
-                        <a href="index.html" class="logo"><img src="{{asset('assets/images/logo.png')}}" height="42" alt="logo"></a>
+                        <a href="index.html" class="logo"><img src="{{asset('assets/images/logos.png')}}" height="42" alt="logo"></a>
                     </div>
                 </div>
 
@@ -62,28 +62,34 @@
 
                     <div class="user-details">
                         <div class="text-center">
-                            <img src="{{asset('assets/images/users/avatar-2.jpg')}}" alt="" class="rounded-circle">
+                            <img src="{{asset('assets/images/admin.png')}}" alt="" class="rounded-circle">
                         </div>
                         <div class="user-info">
                             <span class="text-muted user-status"> Admin</span>
-                            <h4 class="font-16">Anderson Barden</h4>
+                            
                         </div>
                     </div>
 
                     <div id="sidebar-menu">
                         <ul>
                             <li>
-                                <a href="index.php" class="waves-effect">
+                                <a href="{{ route('admin.deshboard') }}" class="waves-effect">
                                     <i class="mdi mdi-view-dashboard"></i>
                                     <span> Dashboard </span>
                                 </a>
                             </li>
-
                             <li>
-                                <a href="user.php" class="waves-effect"><i class="mdi mdi-account-multiple-outline"></i> <span> User </span> </a>
+                                <a href="{{ route('admin.gallery_list') }}" class="waves-effect"><i class="ion-images"></i> <span> Gallery </span> </a>
                             </li>
+                            <li>
+                                <a href="{{ route('admin.contact_list') }}" class="waves-effect"><i class="ion-android-contacts"></i> <span> Contact </span> </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('admin.change_password_form') }}" class="waves-effect"><i class="mdi mdi-account-key"></i> <span> Change Password </span> </a>
+                            </li>
+                            
 
-                            <li class="has_sub">
+                            {{-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted-type"></i><span> Product </span></a>
                                 <ul class="list-unstyled">
                                     <li><a href="active-product.php">Active Products</a></li>
@@ -116,7 +122,7 @@
 
                             <li>
                                 <a href="user.php" class="waves-effect"><i class="mdi mdi-account-outline"></i> <span> Contact </span> </a>
-                            </li>
+                            </li> --}}
 
                             <li>
                                 <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="waves-effect"><i class="mdi mdi-lock-outline"></i><span> Logout </span></a>
@@ -145,11 +151,7 @@
 
                             <ul class="list-inline float-right mb-0">
                                 <li class="list-inline-item dropdown notification-list">
-                                    <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button"
-                                       aria-haspopup="false" aria-expanded="false">
-                                        <i class="ion-ios7-bell noti-icon"></i>
-                                        <span class="badge badge-success noti-icon-badge">3</span>
-                                    </a>
+                                    
                                     <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-menu-lg">
                                         <!-- item-->
                                         <div class="dropdown-item noti-title">
@@ -185,10 +187,10 @@
                                 <li class="list-inline-item dropdown notification-list">
                                     <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
                                        aria-haspopup="false" aria-expanded="false">
-                                        <img src="{{ asset('assets/images/users/avatar-1.jpg')}}" alt="user" class="rounded-circle">
+                                        <img src="{{ asset('assets/images/admin.png')}}" alt="user" class="rounded-circle">
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right profile-dropdown">
-                                        <a class="dropdown-item" style="padding: 6px 10px;" href="#"><i class="mdi mdi-settings m-r-5 text-muted"></i> Change Password</a>
+                                        <a class="dropdown-item" style="padding: 6px 10px;" href="{{ route('admin.change_password_form') }}"><i class="mdi mdi-settings m-r-5 text-muted"></i> Change Password</a>
                                         <a onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="dropdown-item" style="padding: 6px 10px;" href="#"><i class="mdi mdi-logout m-r-5 text-muted"></i> Logout</a>
                                         <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
                                             @csrf
@@ -205,7 +207,7 @@
                                     </button>
                                 </li>
                                 <li class="hide-phone list-inline-item app-search">
-                                    <h3 class="page-title">Company Adminpanel</h3>
+                                    <h3 class="page-title">Stups Admin Panel</h3>
                                 </li>
                             </ul>
 

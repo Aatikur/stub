@@ -7,12 +7,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>Admiry - Responsive Flat Admin Dashboard</title>
+        <title>Stups Admin Dashboard</title>
         <meta content="Admin Dashboard" name="description" />
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('assets/images/logos.png')}}">
 
         <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
                         <div class="alert alert-danger" >{{ Session::get('error') }}</div>
                     @endif
                     <h3 class="text-center mt-0 m-b-15">
-                        <a href="index.html" class="logo logo-admin"><img src="assets/images/logo.png" height="54" alt="logo"></a>
+                        <a href="index.html" class="logo logo-admin"><img src="{{asset('assets/images/logos.png')}}" height="54" alt="logo"></a>
                     </h3>
 
                     <h4 class="text-muted text-center font-18"><b>Sign In</b></h4>

@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Admin;
 use App\Models\User;
-use App\Models\Customer;
-use App\Models\OrderCustomer;
+use App\Models\Contact;
+use App\Models\Gallery;
 use App\Models\Product;
 use App\Models\Order;
 use Illuminate\Support\Facades\Hash;
@@ -17,13 +17,14 @@ class DashboardController extends Controller
 {
     public function dashboardView()
     {
-       
-        return view('admin.dashboard');
+       $gallery_cnt = Gallery::count();
+       $contact_cnt = Contact::count();
+        return view('admin.dashboard',compact('gallery_cnt','contact_cnt'));
        
     }
 
     
-}
+
     // function chartData(){
     //     $data[] = [
     //         'level' => Carbon::now()->format('Y-m'),
@@ -57,28 +58,32 @@ class DashboardController extends Controller
     //     return $data;
     // }
 
-    // public function changePasswordForm()
-    // {
-    //     return view('admin.change_password');
-    // }
+    public function changePasswordForm()
+    {
+        return view('admin.change_password');
+    }
 
-    // public function changePassword(Request $request)
-    // {
-    //     $this->validate($request, [
-    //         'email'   => 'required',
-    //         'current_password' => ['required', 'string'],
-    //         'new_password' => ['required', 'string', 'min:8', 'same:confirm_password'],
-    //     ]);
+    public function changePassword(Request $request){
+        
+        $this->validate($request, [
+            
+            'current_password' => ['required', 'string'],
+            'new_password' => ['required', 'string', 'min:8', 'same:confirm_password'],
+        ]);
+        
+        $user = Admin::where('id',1)->first();
 
-    //     $user = Admin::where('id',1)->first();
-
-    //     if(Hash::check($request->input('current_password'), $user->password)){
-    //         Admin::where('id',1)->update([
-    //             'email' =>$request->input('email'),
-    //             'password'=>Hash::make($request->input('new_password')),
-    //         ]);
-    //     }else{
-    //         return redirect()->back()->with('error','Sorry Current Password Does Not Correct');
-    //     }
-    // }
+        if(Hash::check($request->input('current_password'), $user->password)){
+            Admin::where('id',1)->update([
+                
+                'password'=>Hash::make($request->input('new_password')),
+            ]);
+           return redirect()->back()->with('message','Password Updated Successfully');
+        }
+        
+        else{
+            return redirect()->back()->with('error','Sorry Current Password Does Not Correct');
+        }
+    }
+}
 

@@ -8,47 +8,30 @@
         <div class="row">
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="mini-stat clearfix bg-primary">
-                    <span class="mini-stat-icon"><i class="mdi mdi-cart-outline"></i></span>
+                    <span class="mini-stat-icon"><i class="mdi mdi-file-image"></i></span>
                     <div class="mini-stat-info text-right text-white">
-                        <span class="counter">15852</span>
-                        Total Sales
+                        <span class="counter">{{ $gallery_cnt }}</span>
+                        Total Images
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="mini-stat clearfix bg-primary">
-                    <span class="mini-stat-icon"><i class="mdi mdi-currency-usd"></i></span>
+                    <span class="mini-stat-icon"><i class="typcn typcn-contacts"></i></span>
                     <div class="mini-stat-info text-right text-white">
-                        <span class="counter">956</span>
-                        New Orders
+                        <span class="counter">{{ $contact_cnt }}</span>
+                        Total Contacts
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="mini-stat clearfix bg-primary">
-                    <span class="mini-stat-icon"><i class="mdi mdi-cube-outline"></i></span>
-                    <div class="mini-stat-info text-right text-white">
-                        <span class="counter">5210</span>
-                        New Users
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="mini-stat clearfix bg-primary">
-                    <span class="mini-stat-icon"><i class="mdi mdi-currency-btc"></i></span>
-                    <div class="mini-stat-info text-right text-white">
-                        <span class="counter">20544</span>
-                        Unique Visitors
-                    </div>
-                </div>
-            </div>
+           
         </div>
         <!-- end row -->
 
 
         <div class="row">
 
-            <div class="col-12">
+            {{-- <div class="col-12">
                 <div class="card m-b-20">
                     <div class="card-body">
                         <h4 class="mt-0 m-b-15 header-title">Recent Candidates</h4>
@@ -128,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
         <!-- end row -->
