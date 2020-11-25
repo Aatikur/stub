@@ -88,6 +88,9 @@ a:active {
 .pt0 {
 	padding-top: 0;
 }
+.pd-t-30 {
+    padding-top: 50px;
+}
 .pb0 {
 	padding-bottom: 0 !important;
 }
@@ -128,7 +131,8 @@ a:active {
 	margin-bottom: 55px;
 }
 .sec-title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	color: #FF4328;
 	font-size: 20px;
 }
@@ -601,11 +605,12 @@ body.active-preloader-ovh {
 	animation-delay: 1s;
 }
 .slider-home-one .content h3 {
-	font-family: 'Pacifico';
+	font-family: 'calibri';
 	font-size: 30px;
 	color: #FEC931;
 	-webkit-animation-delay: .5s;
 	animation-delay: .5s;
+	font-weight: 700;
 }
 .slider-home-one .content a.thm-btn {
 	margin-top: 40px;
@@ -652,7 +657,8 @@ body.active-preloader-ovh {
 	display: block;
 	color: #FEC931;
 	font-size: 24px;
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 }
 .banner-style-two .single-banner-carousel h2 {
 	margin: 0;
@@ -689,9 +695,11 @@ body.active-preloader-ovh {
 }
 .welcome-section .welcome-content .title p {
 	color: #FF4328;
-	font-family: 'Pacifico';
+	font-family: 'calibri';
 	font-size: 56px;
 	margin-bottom: 20px;
+	font-weight: 900;
+	line-height: 0.8;
 }
 .welcome-section .welcome-content .title h3 {
 	font-size: 30px;
@@ -898,7 +906,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .footer-subscribe .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	color: #FF4328;
 	font-size: 16px;
 }
@@ -1192,7 +1201,8 @@ body.active-preloader-ovh {
 }
 .recent-projects .single-recent-project .text-box span {
 	color: #FF4328;
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 16px;
 }
 .recent-projects .single-recent-project .text-box h3 {
@@ -1334,7 +1344,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .cta-style-two .cta-style-two-content .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #ff4328;
 }
@@ -1403,7 +1414,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .call-to-action-one .call-to-action-content .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #212121;
 }
@@ -1468,7 +1480,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .cta-style-three span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #f3b637;
 }
@@ -1661,7 +1674,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .faq-content .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #FF4328;
 }
@@ -1773,7 +1787,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .team-section .single-team-carousel .inner .team-content .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #FF4328;
 }
@@ -1815,7 +1830,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .service-style-one .service-content .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #FF4328;
 }
@@ -1828,7 +1844,7 @@ body.active-preloader-ovh {
 .service-style-one .service-content p {
 	margin: 0;
 	color: #757575;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .service-style-one .service-content p + p {
 	/* margin-top: 35px; */
@@ -2007,7 +2023,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .service-style-two .service-content span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #202020;
 }
@@ -2575,7 +2592,8 @@ body.active-preloader-ovh {
 	margin: 0;
 }
 .contact-section .title span {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	font-size: 20px;
 	color: #FF4328;
 }
@@ -3210,7 +3228,8 @@ body.active-preloader-ovh {
 	list-style: none;
 }
 .single-pricing span.price-label {
-	font-family: 'Pacifico';
+	font-family: 'Calibri';
+    font-weight: 700;
 	color: #FF4328;
 	font-size: 16px;
 	display: block;

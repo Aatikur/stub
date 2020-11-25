@@ -38,7 +38,7 @@
                         </div><!-- /.text-box -->
                         <div class="text-box hvr-bounce-to-bottom">
                             <a href="{{route('web.corporate_images')}}"><h3>CORPORATE GIFTS </h3></a>
-                            <p>There are many people variation of passages of lorem Ipsum available in the majority have suffer alteration in some.</p>
+                            <p>Corporate Gifts printing consist of printing on wide range of items like pen, bags, t-shirts and etc</p>
                             <a href="{{route('web.corporate_images')}}" class="read-more fas fa-angle-right"></a>
                         </div><!-- /.text-box -->
                     </div><!-- /.single-what-we-do -->
@@ -57,7 +57,7 @@
                             <div class="single-what-we-do-one hvr-bounce-to-bottom">
                                 <i class="printify-icon-printing-text"></i>
                                 <a href="{{route('web.promo_images')}}"><h3>PROMOTIONAL / POS</h3></a>
-                                <p>There are many people variation of passages of lorem Ipsum available in the majority have suffer alteration in some.</p>
+                                <p>Promotional / POS printing and designing is done mainly done for product and promo items like banner, bags, stands and many more.</p>
                                 <a href="{{route('web.promo_images')}}" class="read-more fas fa-angle-right"></a>
                             </div><!-- /.single-what-we-do-one -->
                         </div><!-- /.col-sm-6 -->

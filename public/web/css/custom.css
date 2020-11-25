@@ -9,7 +9,8 @@
     padding: 10px 0;
 }
 .mail-us-section h5 {
-    font-family: 'Pacifico';
+    font-family: 'calibri';
+    font-weight:700;
     font-size: 30px;
     color: #FF4328;
     text-align: right;
@@ -48,7 +49,7 @@
     padding:30px 30px 26px;
 }
 .moto-content p {
-    font-family: 'Pacifico';
+    font-family: 'calibri';
     font-size: 23px;
 }
 .vision-content ul {
