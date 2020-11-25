@@ -87,7 +87,9 @@
                             <li>
                                 <a href="{{ route('admin.change_password_form') }}" class="waves-effect"><i class="mdi mdi-account-key"></i> <span> Change Password </span> </a>
                             </li>
-                            
+                            <li>
+                                <a href="{{ route('admin.product_image_list_form')}}"class="waves-effect"><i class="ion-images"></i> <span>  Product Images </span> </a>
+                            </li>
 
                             {{-- <li class="has_sub">
                                 <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted-type"></i><span> Product </span></a>

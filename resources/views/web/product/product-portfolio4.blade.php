@@ -29,90 +29,23 @@
                 <h3>PROMOTIONAL / POS</h3>
             </div>
             <div class="row"> 
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Customized Display Stands.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Customized Display Stands.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Customized Display Stands</h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Counter Stands.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Counter Stands.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Counter Stands</h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Customized Carrier Bags.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Customized Carrier Bags.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Customized Carrier Bags</h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Banners.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Banners.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Banners</h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Button Badges.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Button Badges.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Button Badges</h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
-                <div class="col-md-4 col-sm-6 col-xs-6">
-                    <div class="single-recent-project">
-                        <div class="img-box">
-                            <img src="{{asset('web/img/gallery/4/Trophies.jpg')}}" alt="Stups Protfolio"/>
-                        </div><!-- /.img-box -->
-                        <div class="text-box">
-                            <a class="example-image-link more" href="{{asset('web/img/gallery/4/Trophies.jpg')}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
-                            <div class="inner hvr-bounce-to-bottom">
-                                <span>Promotional / Pos</span>
-                                <a><h3>Trophies </h3></a>
-                            </div><!-- /.inner -->
-                        </div><!-- /.text-box -->
-                    </div><!-- /.single-recent-project -->
-                </div><!-- /.col-md-3 -->
+                @foreach($promo_data as $data)
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="single-recent-project">
+                            <div class="img-box">
+                                <img src="{{asset('images/product/'.$data->images)}}" alt="Stups Protfolio"/>
+                            </div><!-- /.img-box -->
+                            <div class="text-box">
+                                <a class="example-image-link more" href="{{asset('images/product/'.$data->images)}}" data-lightbox="example-set" data-title="Stups Protfolio"><i class="fas fa-plus"></i></a>
+                                <div class="inner hvr-bounce-to-bottom">
+                                    <span>Promotional / Pos</span>
+                                    <a><h3>{{ $data->caption }}</h3></a>
+                                </div><!-- /.inner -->
+                            </div><!-- /.text-box -->
+                        </div><!-- /.single-recent-project -->
+                    </div><!-- /.col-md-3 -->
+                @endforeach
+               
             </div><!-- /.row -->
         </div><!-- /.thm-container -->
     </section><!-- /.recent-projects -->

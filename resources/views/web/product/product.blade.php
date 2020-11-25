@@ -32,14 +32,14 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="single-what-we-do">
                         <div class="text-box hvr-bounce-to-bottom">
-                            <a href="{{route('web.product.product-portfolio1')}}"><h3>LITHO AND DIGITAL PRINTING</h3></a>
+                            <a href="{{route('web.litho_images')}}"><h3>LITHO AND DIGITAL PRINTING</h3></a>
                             <p>Lithographic printing is a style of printing in which an image is transferred to a printing plate, which is then covered with both water and oil-based ink. </p>
-                            <a href="{{route('web.product.product-portfolio1')}}" class="read-more fas fa-angle-right"></a>
+                            <a href="{{route('web.litho_images')}}" class="read-more fas fa-angle-right"></a>
                         </div><!-- /.text-box -->
                         <div class="text-box hvr-bounce-to-bottom">
-                            <a href="{{route('web.product.product-portfolio2')}}"><h3>CORPORATE GIFTS </h3></a>
+                            <a href="{{route('web.corporate_images')}}"><h3>CORPORATE GIFTS </h3></a>
                             <p>There are many people variation of passages of lorem Ipsum available in the majority have suffer alteration in some.</p>
-                            <a href="{{route('web.product.product-portfolio2')}}" class="read-more fas fa-angle-right"></a>
+                            <a href="{{route('web.corporate_images')}}" class="read-more fas fa-angle-right"></a>
                         </div><!-- /.text-box -->
                     </div><!-- /.single-what-we-do -->
                 </div><!-- /.col-md-6 -->
@@ -48,17 +48,17 @@
                         <div class="col-sm-6">
                             <div class="single-what-we-do-one hvr-bounce-to-bottom">
                                 <i class="printify-icon-paper-drill"></i>
-                                <a href="{{route('web.product.product-portfolio3')}}"><h3>FLEXO</h3></a>
+                                <a href="{{route('web.flexo_images')}}"><h3>FLEXO</h3></a>
                                 <p>Flexography is a form of printing process which utilizes a flexible relief plate.</p>
-                                <a href="{{route('web.product.product-portfolio3')}}" class="read-more fas fa-angle-right"></a>
+                                <a href="{{route('web.flexo_images')}}" class="read-more fas fa-angle-right"></a>
                             </div><!-- /.single-what-we-do-one -->
                         </div><!-- /.col-sm-6 -->
                         <div class="col-sm-6">
                             <div class="single-what-we-do-one hvr-bounce-to-bottom">
                                 <i class="printify-icon-printing-text"></i>
-                                <a href="{{route('web.product.product-portfolio4')}}"><h3>PROMOTIONAL / POS</h3></a>
+                                <a href="{{route('web.promo_images')}}"><h3>PROMOTIONAL / POS</h3></a>
                                 <p>There are many people variation of passages of lorem Ipsum available in the majority have suffer alteration in some.</p>
-                                <a href="{{route('web.product.product-portfolio4')}}" class="read-more fas fa-angle-right"></a>
+                                <a href="{{route('web.promo_images')}}" class="read-more fas fa-angle-right"></a>
                             </div><!-- /.single-what-we-do-one -->
                         </div><!-- /.col-sm-6 -->
                     </div><!-- /.row -->

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Gallery;
 use App\Models\Contact;
-
+use App\Models\ProductImages;
 class WebController extends Controller
 {
     public function gallery(){
@@ -38,6 +38,26 @@ class WebController extends Controller
         return view('web.contact.response',compact('status'));
         
 
+    }
+
+    public function LithoImages(){
+        $litho_data = ProductImages::where('product_category_id',1)->get();
+        return view('web.product.product-portfolio1',compact('litho_data'));
+    }
+
+    public function corporateImages(){
+        $corporate_data = ProductImages::where('product_category_id',2)->get();
+        return view('web.product.product-portfolio2',compact('corporate_data'));
+    }
+
+    public function flexoImages(){
+        $flexo_data = ProductImages::where('product_category_id',3)->get();
+        return view('web.product.product-portfolio3',compact('flexo_data'));
+    }
+
+    public function promoImages(){
+        $promo_data = ProductImages::where('product_category_id',4)->get();
+        return view('web.product.product-portfolio4',compact('promo_data'));
     }
 
 

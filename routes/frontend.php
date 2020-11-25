@@ -35,24 +35,24 @@ Route::group(['namespace' => 'Web'],function(){
     })->name('web.product.product');
 
     // ------- LITHO AND DIGITAL PRINTING --------
-    Route::get('/Litho-And-Digital-Printing', function () {
-        return view('web.product.product-portfolio1');
-    })->name('web.product.product-portfolio1');
+    // Route::get('/Litho-And-Digital-Printing', function () {
+    //     return view('web.product.product-portfolio1');
+    // })->name('web.product.product-portfolio1');
 
     // ------- Corporate Gifts --------
-    Route::get('/Corporate-Gifts', function () {
-        return view('web.product.product-portfolio2');
-    })->name('web.product.product-portfolio2');
+    // Route::get('/Corporate-Gifts', function () {
+    //     return view('web.product.product-portfolio2');
+    // })->name('web.product.product-portfolio2');
 
     // ------- Flexo Printing --------
-    Route::get('/Flexo-Printing', function () {
-        return view('web.product.product-portfolio3');
-    })->name('web.product.product-portfolio3');
+    // Route::get('/Flexo-Printing', function () {
+    //     return view('web.product.product-portfolio3');
+    // })->name('web.product.product-portfolio3');
 
     // ------- Promotional&Pos --------
-    Route::get('/Promotional&Pos', function () {
-        return view('web.product.product-portfolio4');
-    })->name('web.product.product-portfolio4');
+    // Route::get('/Promotional&Pos', function () {
+    //     return view('web.product.product-portfolio4');
+    // })->name('web.product.product-portfolio4');
 
     // ------- Promotional&Pos --------
     // Route::get('/res', function () {
@@ -64,4 +64,9 @@ Route::group(['namespace' => 'Web'],function(){
     Route::get('/Gallery', 'WebController@gallery')->name('web.gallery');
     Route::post('/add/contacts','WebController@addContacts')->name('web.add_contacts');
     Route::get('/res/{status}','WebController@response')->name('web.response');
+    Route::get('/Litho-And-Digital-Printing','WebController@LithoImages')->name('web.litho_images');
+    Route::get('/Corporate-Gifts','WebController@corporateImages')->name('web.corporate_images');
+    Route::get('/Flexo-Printing','WebController@flexoImages')->name('web.flexo_images');
+    Route::get('/Promotional&Pos','WebController@promoImages')->name('web.promo_images');
+
 });

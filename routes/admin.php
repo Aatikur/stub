@@ -27,6 +27,17 @@ Route::group(['namespace' => 'Admin'],function(){
         Route::group(['prefix'=>'inquiry'],function(){
             Route::get('contact/list/form','InquiryController@contactList')->name('admin.contact_list');
             Route::get('ajax/list','InquiryController@contactListAjax')->name('admin.contact_list_ajax');
+
+        });
+
+        Route::group(['prefix'=>'product'],function(){
+            Route::get('product/list/form','ProductController@productImageList')->name('admin.product_image_list_form');
+            Route::get('add/form','ProductController@addImageForm')->name('admin.add_product_image_form');
+            Route::post('add','ProductController@addImage')->name('admin.product_add_image');
+            Route::get('ajax/list','ProductController@imageListAjax')->name('admin.image_list_ajax');
+            Route::get('edit/form/{id}','ProductController@imageEditForm')->name('admin.product_image_edit_form');
+            Route::put('update/{id}','ProductController@updateImage')->name('admin.update_product_image');
+            Route::get('delete/{id}','ProductController@deleteImage')->name('admin.delete_product_image');
         });
  
         
