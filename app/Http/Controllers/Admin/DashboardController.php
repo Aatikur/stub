@@ -9,7 +9,7 @@ use App\Models\User;
 use App\Models\Contact;
 use App\Models\Gallery;
 use App\Models\Product;
-use App\Models\Order;
+use App\Models\ProductImages;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
 
@@ -19,7 +19,8 @@ class DashboardController extends Controller
     {
        $gallery_cnt = Gallery::count();
        $contact_cnt = Contact::count();
-        return view('admin.dashboard',compact('gallery_cnt','contact_cnt'));
+       $total_product_images = ProductImages::count();
+        return view('admin.dashboard',compact('gallery_cnt','contact_cnt','total_product_images'));
        
     }
 

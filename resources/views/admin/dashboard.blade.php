@@ -11,7 +11,7 @@
                     <span class="mini-stat-icon"><i class="mdi mdi-file-image"></i></span>
                     <div class="mini-stat-info text-right text-white">
                         <span class="counter">{{ $gallery_cnt }}</span>
-                        Total Images
+                        Total Gallery Images
                     </div>
                 </div>
             </div>
@@ -21,6 +21,15 @@
                     <div class="mini-stat-info text-right text-white">
                         <span class="counter">{{ $contact_cnt }}</span>
                         Total Contacts
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="mini-stat clearfix bg-primary">
+                    <span class="mini-stat-icon"><i class="ti-image"></i></span>
+                    <div class="mini-stat-info text-right text-white">
+                        <span class="counter">{{ $total_product_images }}</span>
+                        Total Product Images
                     </div>
                 </div>
             </div>
