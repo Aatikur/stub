@@ -95,13 +95,14 @@ class ProductController extends Controller
         $this->validate($request, [
             'caption'   => 'required',
             'category'=>'required',
-            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         
         $caption = $request->input('caption');
         $category = $request->input('category');
         $image_name = null;
-        if($request->hasfile('image'))
+       
+        if($request->hasfile('images'))
         {
         
             
@@ -112,7 +113,7 @@ class ProductController extends Controller
             $path_thumb = base_path().'/public/images/product/thumb';
             File::exists($path_thumb) or File::makeDirectory($path_thumb, 0777, true, true);
 
-        	$image = $request->file('image');
+        	$image = $request->file('images');
             $destination = base_path().'/public/images/product/';
             $image_extension = $image->getClientOriginalExtension();
             $image_name = md5(date('now').time())."-".uniqid()."."."$image_extension";
@@ -126,8 +127,8 @@ class ProductController extends Controller
                 $constraint->aspectRatio();
             })->save($thumb_path);
 
-            $prev_img_delete_path = base_path().'/public/images/product/'.$cat_prev_image->image;
-            $prev_img_delete_path_thumb = base_path().'/public/images/product/thumb/'.$cat_prev_image->image;
+            $prev_img_delete_path = base_path().'/public/images/product/'.$cat_prev_image->images;
+            $prev_img_delete_path_thumb = base_path().'/public/images/product/thumb/'.$cat_prev_image->images;
             if ( File::exists($prev_img_delete_path)) {
                 File::delete($prev_img_delete_path);
             }
@@ -141,7 +142,7 @@ class ProductController extends Controller
                
                 'caption' =>$caption,
                 'product_category_id'=>$category,
-                'image'=>$image_name,
+                'images'=>$image_name,
                
             ]);
 
@@ -159,8 +160,8 @@ class ProductController extends Controller
     public function deleteImage($id){
        
         $prev_image = ProductImages::where('id',$id)->first();
-        $prev_img_delete_path = base_path().'/public/images/product/'.$prev_image->image;
-        $prev_img_delete_path_thumb = base_path().'/public/images/product/thumb/'.$prev_image->image;
+        $prev_img_delete_path = base_path().'/public/images/product/'.$prev_image->images;
+        $prev_img_delete_path_thumb = base_path().'/public/images/product/thumb/'.$prev_image->images;
         if ( File::exists($prev_img_delete_path)) {
             File::delete($prev_img_delete_path);
         }
